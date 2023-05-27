@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI tourist guide Website Front End</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="H.css">
+</head>
+
+<body>
+
+    <header>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>T</span>ravel</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#book">book</a>
+            <a href="#packages">packages</a>
+            <a href="#services">services</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+
+    </header>
+
+    <div class="login-form-container">
+
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>don't have an account? <a href="#">register now</a></p>
+        </form>
+
+    </div>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>time for adventure or devotional</h3>
+            <p>discover new places with us, adventure awaits</p>
+            <a href="#" class="btn">Explore more</a>
+        </div>
+
+        <div class="controls">
+            <span class="vid-btn active" data-src="ocean video-1.mp4"></span>
+            <span class="vid-btn " data-src="stars video-2.mp4"></span>
+            <span class="vid-btn " data-src="desert video-3.mp4"></span>
+            <span class="vid-btn " data-src="snowy-trees video-4.mp4"></span>
+            <span class="vid-btn " data-src="waterfalll video-5.mp4"></span>
+        </div>
+
+        <div class="video-container">
+            <video src="ocean video-1.mp4" id="video-slider" loop autoplay muted></video>
+        </div>
+
+    </section>
+
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="airfare.jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <h3>location</h3>
+                    <input type="text" placeholder="name">
+                </div>
+                <div class="inputBox">
+                    <h3>how many</h3>
+                    <input type="number" placeholder="number of guests">
+                </div>
+                <div class="inputBox">
+                    <h3>from</h3>
+                    <input type="date">
+                </div>
+                <div class="inputBox">
+                    <h3>to</h3>
+                    <input type="date">
+                </div>
+                <input type="submit" class="btn" value="book now">
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="packages" id="packages">
+
+        <h1 class="heading">
+            <span>p</span>
+            <span>a</span>
+            <span>c</span>
+            <span>k</span>
+            <span>a</span>
+            <span>g</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="araku.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> araku </h3>
+                    <p>Araku Valley, which offers stunning panoramic views of the surrounding hills and valleys. Another must-visit place in Araku is the Borra Caves, which are natural limestone formations that are believed to be over a million years old.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 7,500.00 <span>Rs 10,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="bankok.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> bankok </h3>
+                    <p>Bankok is famous for "the grand place","wat phra kaew","wat arun","chinatown","floating markets",etc..,</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 10,000.00 <span>Rs 14,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="goa.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> goa </h3>
+                    <p>It is a major tourist destination in India, attracting both domestic and international travelers.like:beaches, forts, water falls, wildlife sancturies, nightlife, etc..,</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 11,500.00 <span>Rs 15,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="paris.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> paris </h3>
+                    <p>It is known for its iconic landmarks, romantic ambiance, art museums, and world-renowned cuisine.like: eiffel tower, louvre museum, notre-dame cathedral, seine river, versailles palace,etc..,</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 18,000.00 <span>Rs 24,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="maldives.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> maldives </h3>
+                    <p> It is known for its beautiful white-sand beaches, crystal clear waters, and abundant marine life. The Maldives is a popular destination for honeymooners and those seeking a relaxing vacation in paradise.</p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 14,500.00 <span>Rs 18,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="sydney.jpg" alt="">
+                <div class="content">
+                    <h3><i class="fa-solid fa-location-dot"></i> sydney </h3>
+                    <p>It is a cosmopolitan city known for its iconic landmarks, beautiful beaches, and vibrant cultural scene. like:Opera House, Harbour Bridge, Bondi Beach, Royal Botanic Garden,etc.., </p>
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="price"> Rs 15,999.00 <span>Rs 20,000.00</span></div>
+                    <a href="#" class="btn">book now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span>
+            <span>e</span>
+            <span>r</span>
+            <span>v</span>
+            <span>i</span>
+            <span>c</span>
+            <span>e</span>
+            <span>s</span>
+        </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <i class="fa-solid fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p> we will consider your budget, look for hotels in less touristy areas, check for discounts, read reviews considering these we will provide you the best/comfortable for you to check-in. </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-bowl-food fa-bottle-water"></i>
+                <h3>food and drinks</h3>
+                <p>Consider your budget: Food and drink prices can vary widely depending on where you are in the world. Before you start looking for restaurants and bars, figure out how much you're willing to spend. </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-traffic-light"></i>
+                <h3>safety guide</h3>
+                <p>Research your destination, Keep your valuables safe, Follow local laws and customs, Stay in touch with loved ones. </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-earth-asia"></i>
+                <h3>around the world</h3>
+                <p>we will provide valuable information about local attractions, restaurants, accommodations, and more. and also you can travel around the world within short time.   </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-train"></i>
+                <h3>fastest travel</h3>
+                <p> The fastest mode of travel largely depends on the distance you are traveling, your budget, and your preference. It's important to note that while some modes of travel may be faster than others, they may not be the most convenient or cost-effective. When choosing a mode of travel, consider your budget, travel time, and comfort level to find the best option for your needs.
+                </p>
+            </div>
+
+            <div class="box">
+                <i class="fa-solid fa-person-hiking"></i>
+                <h3>adventures</h3>
+                <p>we will consider your interests, research your destination, and we will prepare some adventure trips for your happiness, and also we will give yoou the best experience. </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="gallery" id="gallery">
+        <h3 class="heading">
+            <span>g</span>
+            <span>a</span>
+            <span>l</span>
+            <span>l</span>
+            <span>e</span>
+            <span>r</span>
+            <span>y</span>
+        </h3>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="gallery1.jpg" alt="">
+                <div class="content">
+                    <h3>Bhakthi place</h3>
+                    <p>Before visiting a devotional place, it's important to research the tradition and the significance of the location. This will help you understand the practices and customs associated with the site, and show respect to the people and culture.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery2.jpg" alt="">
+                <div class="content">
+                    <h3>bhakthi place</h3>
+                    <p>Many devotional places have dress codes or other requirements for visitors. Be sure to research the appropriate dress and behavior for the site, and follow these guidelines out of respect for the tradition and those who follow it.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery3.jpg" alt="">
+                <div class="content">
+                    <h3>bhakthi place</h3>
+                    <p>When visiting a devotional place, it's important to be respectful of the space and those around you. Avoid loud or disruptive behavior, and follow any instructions or guidelines given by the site staff or religious leaders. </p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery4.jpg" alt="">
+                <div class="content">
+                    <h3>bhakthi place</h3>
+                    <p>In addition to dress codes and other requirements, devotional places may have specific customs or rituals associated with the location. Be observant of these practices and respectful of those who follow them.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery5.jpg" alt="">
+                <div class="content">
+                    <h3>adventure time</h3>
+                    <p>Adventure can refer to a wide range of exciting or unusual experiences or activities, often involving taking risks or exploring new or unfamiliar places. </p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery6.jpg" alt="">
+                <div class="content">
+                    <h3>adventure time</h3>
+                    <p>These activities often involve taking risks and stepping outside of one's comfort zone in order to have an exciting and unique experience.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery7.jpg" alt="">
+                <div class="content">
+                    <h3>adventure time</h3>
+                    <p> This type of adventure often involves immersing oneself in new cultures, meeting new people, and trying new foods and activities.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="gallery8.jpg" alt="">
+                <div class="content">
+                    <h3>adventure time</h3>
+                    <p>Adventure activities can include things like hiking, camping, rock climbing, mountain biking, kayaking, surfing, bungee jumping, skydiving, and more.</p>
+                    <a href="#" class="btn">see more..</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="review" id="review">
+
+        <h3 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>v</span>
+            <span>i</span>
+            <span>e</span>
+            <span>w</span>
+        </h3>
+
+        <div class="swiper-container review-slider">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="savithri.p1.jpg" alt="">
+                        <h3>savithri</h3>
+                        <p>They are knowledgeable about the history, culture, attractions, and customs of the place they are guiding visitors through.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="gautham adani.p3.jpg" alt="">
+                        <h3>gautham adani</h3>
+                        <p>They specialized in particular types of tours such as walking tours, bus tours, or adventure tours, and may provide commentary and information on the history, architecture, and natural beauty of the area.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="anupama.p2.jpg" alt="">
+                        <h3>anupama</h3>
+                        <p> the safety and well-being of their group, especially when leading adventure tours or visiting remote or potentially hazardous locations.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="mukesh ambani.p4.jpg" alt="">
+                        <h3>mukesh ambani</h3>
+                        <p>multilingual support, personalised recommendations, like better experiences will be experienced by you in their service.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="pallavi.p5.jpg" alt="">
+                        <h3>sai pallavi</h3>
+                        <p>the potential to revolutionize the travel industry by providing a personalized and enhanced experience for travelers, while also improving the efficiency and profitability of tourism businesses.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="shiv nadar.p6.jpg" alt="">
+                        <h3>shiv nadar</h3>
+                        <p>the experience of visitors to a particular destination by providing valuable insights and insider knowledge, and ensuring a safe and enjoyable journey.</p>
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <section class="contact">
+
+        <h3 class="heading">
+            <span>c</span>
+            <span>o</span>
+            <span>n</span>
+            <span>t</span>
+            <span>a</span>
+            <span>c</span>
+            <span>t</span>
+        </h3>
+        <section class="contact" id="contact">
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115348.31815136687!2d68.28450457850833!3d25.38354855142485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x394c70f6d444f3c3%3A0xc00bbc183d41e285!2sHyderabad%2C%20Sindh%2C%20Pakistan!5e0!3m2!1sen!2sin!4v1682788015085!5m2!1sen!2sin"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"> </iframe>
+
+        <div class="row">
+            <div class="image">
+                <img src="orange aeroplane.jpg" alt="">
+            </div>
+
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="name">
+                    <input type="email" placeholder="email">
+                </div>
+                <div class="inputBox">
+                    <input type="number" placeholder="number">
+                    <input type="text" placeholder="subject">
+                </div>
+                <textarea placeholder="message" name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="send message">
+            </form>
+        </div>
+
+    </section>
+
+    <section class="brand-container">
+        <div class="brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="img1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="img2.png" alt=""></div>
+                <div class="swiper-slide"><img src="img3.png" alt=""></div>
+                <div class="swiper-slide"><img src="img4.png" alt=""></div>
+                <div class="swiper-slide"><img src="img5.png" alt=""></div>
+                <div class="swiper-slide"><img src="img6.png" alt=""></div>
+                <div class="swiper-slide"><img src="img7.png" alt=""></div>
+                <div class="swiper-slide"><img src="img9.png" alt=""></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+                <p> we provide personalized recommendations, context-aware guidance, multilingual support,etc.., facilities for our customers sake. our main branch is at hyderabad,india. for enquiry: 9666674055, insta id: _ _ _ _harshith_ _ _ _ _ we provide 24/7 service to customers for any enquiry related travelling</p>
+                <p> For more details contact: 
+
+                    Ayyappa-9398420166,  Manu-7989066859,
+                    Dhanu-6305553600, Narayana-9133412709</p>
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">england</a>
+                <a href="#">america</a>
+                <a href="#">russia</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#">home</a>
+                <a href="#">book</a>
+                <a href="#">packages</a>
+                <a href="#">services</a>
+                <a href="#">gallery</a>
+                <a href="#">review</a>
+                <a href="#">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">skype</a>
+            </div>
+
+        </div>
+
+        <h1 class="credit"> created by <span> Harshith and Team </span> all rights reserved! </h1>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="H.js"></script>
+</body>
+
+</html>
